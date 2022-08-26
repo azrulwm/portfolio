@@ -50,7 +50,8 @@ body {
 
 /* home section */
 
-.home-section.active {
+.home-section.active,
+.project-section.active {
   position: relative;
   opacity: 1;
   z-index: 8;
@@ -94,6 +95,7 @@ body {
   position: relative;
   top: 0;
   transition: 1s;
+  opacity: 0;
 }
 
 .project-heading {
@@ -110,7 +112,7 @@ body {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
 }
 
