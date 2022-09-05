@@ -71,10 +71,10 @@ body {
   transition: 1s;
 }
 
-.hero-heading {
+.home-heading {
   color: #fff;
   font-size: 120px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-weight: 300;
 }
 
