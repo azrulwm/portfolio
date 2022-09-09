@@ -176,6 +176,7 @@ body {
 .project-btn.live {
   background: none;
   border: 2px solid #fff;
+  text-align: center;
 }
 
 .project-card:hover .project-img {
@@ -184,6 +185,12 @@ body {
 
 .project-card:hover .project-content {
   opacity: 1;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* about section */
@@ -498,7 +505,6 @@ body {
   border: 1px solid #fff;
   margin-bottom: 30px;
   border-radius: 5px;
-  text-transform: capitalize;
   color: #fff;
   padding: 5px 10px;
 }
