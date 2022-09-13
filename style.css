@@ -721,11 +721,11 @@ color: #52ff4f;
     text-align: center;
   }
 
-  .project-card:hover .project-img {
+  .blur {
     filter: blur(20px);
   }
 
-  .project-card:hover .project-content {
+  .text-visible {
     opacity: 1;
   }
 
