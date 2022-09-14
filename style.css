@@ -723,10 +723,12 @@ color: #52ff4f;
 
   .blur {
     filter: blur(20px);
+    transition: 1s;
   }
 
   .text-visible {
     opacity: 1;
+    transition: 1s;
   }
 
   a:visited,
