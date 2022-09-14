@@ -639,7 +639,7 @@ color: #52ff4f;
 
   .project-section {
     width: 100%;
-    position: static;
+    position: fixed;
     padding: 100px 0 0 0;
     top: 0;
     transition: 1s;
@@ -723,12 +723,10 @@ color: #52ff4f;
 
   .blur {
     filter: blur(20px);
-    transition: 1s;
   }
 
   .text-visible {
     opacity: 1;
-    transition: 1s;
   }
 
   a:visited,
@@ -742,7 +740,7 @@ color: #52ff4f;
   .about-section {
     width: 100%;
     min-height: 100vh;
-    padding: 150px 100px 0;
+    padding: 50px 15px 0;
     position: fixed;
     top: 0;
     opacity: 0;
@@ -751,21 +749,22 @@ color: #52ff4f;
 
   .about {
     width: 100%;
-    display: grid;
+    display: block;
     grid-template-columns: 30% 65%;
     grid-gap: 40px;
   }
 
   .about-img-container {
     position: relative;
+    /* display: none; */
   }
 
   .about-info {
     color: #fff;
     opacity: 0.6;
-    font-size: 20px;
-    line-height: 35px;
-    padding: 20px;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 35px;
     text-align: justify;
   }
 
@@ -782,42 +781,26 @@ color: #52ff4f;
     opacity: 0.7;
   }
 
-  .download-cv-btn {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: 0.5s;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
   /* skills */
   .skill-section {
     position: relative;
-    margin: 100px 0;
+    margin: 30px 0;
   }
 
   .heading {
     text-align: center;
-    font-size: 60px;
+    font-size: 25px;
     color: #fff;
     text-transform: capitalize;
     font-weight: 300;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .skills-container {
     width: 95%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
+    grid-gap: 5px;
     color: #fff;
   }
 
@@ -828,15 +811,15 @@ color: #52ff4f;
   .skill-img {
     display: block;
     margin: auto;
-    height: 200px;
+    height: 75px;
   }
 
   .skill-name {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 300;
     text-align: center;
     text-transform: capitalize;
-    margin: 30px 0 20px;
+    margin: 15px 0 20px;
   }
 
   /*
