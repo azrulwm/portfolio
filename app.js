@@ -3,22 +3,7 @@
 const links = document.querySelectorAll(".link");
 const sections = document.querySelectorAll("section");
 
-let activeLink = 0;
-links.forEach((link, i) => {
-  link.addEventListener("click", () => {
-    if (activeLink != i) {
-      links[activeLink].classList.remove("active");
-      link.classList.add("active");
-      sections[activeLink].classList.remove("active");
-
-      setTimeout(() => {
-        activeLink = i;
-        sections[i].classList.add("active");
-      }, 1000);
-    }
-  });
-});
-
+// For scrolling animation in project section
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -40,7 +25,29 @@ const observer = new IntersectionObserver(
   { threshold: 1 }
 );
 
-const projectCards = document.querySelectorAll(".project-card");
-projectCards.forEach((projectCard) => {
-  observer.observe(projectCard);
+let activeLink = 0;
+links.forEach((link, i) => {
+  link.addEventListener("click", () => {
+    if (activeLink != i) {
+      links[activeLink].classList.remove("active");
+      link.classList.add("active");
+      sections[activeLink].classList.remove("active");
+
+      setTimeout(() => {
+        activeLink = i;
+        sections[i].classList.add("active");
+
+        if (activeLink == 1) {
+          //project section//
+          const projectCards = document.querySelectorAll(".project-card");
+          projectCards.forEach((projectCard) => {
+            observer.observe(projectCard);
+          });
+        } else {
+          observer.disconnect();
+        }
+      }, 1000);
+    }
+    console.log(activeLink);
+  });
 });
